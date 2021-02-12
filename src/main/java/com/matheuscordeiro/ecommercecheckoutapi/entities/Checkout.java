@@ -1,5 +1,6 @@
 package com.matheuscordeiro.ecommercecheckoutapi.entities;
 
+import com.matheuscordeiro.ecommercecheckoutapi.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,9 +15,13 @@ import javax.persistence.*;
 @AllArgsConstructor
 public class Checkout{
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
     @Column
     private String code;
+
+    @Column
+    @Enumerated(value = EnumType.STRING)
+    private Status status;
 }

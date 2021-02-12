@@ -8,15 +8,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+import java.util.UUID;
 
 @Service
-public class CheckoutServiceImpl implements CheckoutService{
+public class CheckoutServiceImpl implements CheckoutService {
     @Autowired
     CheckoutRepository checkoutRepository;
 
     @Override
     public Optional<Checkout> create(CheckoutRequest checkoutRequest) {
-        return Optional.empty();
+        final Checkout checkout = Checkout.builder().code(UUID.randomUUID().toString()).status(Status.CREATED).build();
+        return Optional.of(checkoutRepository.save(checkout));
     }
 
     @Override
