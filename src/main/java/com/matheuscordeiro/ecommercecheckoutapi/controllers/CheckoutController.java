@@ -3,7 +3,7 @@ package com.matheuscordeiro.ecommercecheckoutapi.controllers;
 import com.matheuscordeiro.ecommercecheckoutapi.entities.Checkout;
 import com.matheuscordeiro.ecommercecheckoutapi.http.CheckoutRequest;
 import com.matheuscordeiro.ecommercecheckoutapi.http.CheckoutResponse;
-import com.matheuscordeiro.ecommercecheckoutapi.servicies.CheckoutService;
+import com.matheuscordeiro.ecommercecheckoutapi.servicies.interfaces.CheckoutService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

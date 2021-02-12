@@ -1,4 +1,4 @@
-package com.matheuscordeiro.ecommercecheckoutapi.servicies;
+package com.matheuscordeiro.ecommercecheckoutapi.servicies.interfaces;
 
 import com.matheuscordeiro.ecommercecheckoutapi.entities.Checkout;
 import com.matheuscordeiro.ecommercecheckoutapi.enums.Status;

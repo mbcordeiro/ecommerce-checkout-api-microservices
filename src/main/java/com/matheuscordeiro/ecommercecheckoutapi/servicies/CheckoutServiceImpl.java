@@ -4,6 +4,7 @@ import com.matheuscordeiro.ecommercecheckoutapi.entities.Checkout;
 import com.matheuscordeiro.ecommercecheckoutapi.enums.Status;
 import com.matheuscordeiro.ecommercecheckoutapi.http.CheckoutRequest;
 import com.matheuscordeiro.ecommercecheckoutapi.repositories.CheckoutRepository;
+import com.matheuscordeiro.ecommercecheckoutapi.servicies.interfaces.CheckoutService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
